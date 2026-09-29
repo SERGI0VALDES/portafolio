@@ -1,4 +1,5 @@
 import PageSection from "@/components/PageSection";
+import ListaProyectos from "@/components/proyectos/ListaProyectos";
 
 export const metadata = {
     title: "Proyectos | Sergio Valdes",
@@ -8,8 +9,11 @@ export const metadata = {
 export default function Proyectos() {
     return (
         <PageSection>
-            <h1 className="text-3xl md:text-4xl font-bold">Estos son algunos de mis proyectos.</h1>
+            <h1 className="text-3xl md:text-4xl font-bold ">Estos son algunos de mis proyectos.</h1>
             <p className="mt-4 text-lg text-gray-600 max-w-xl">Aqui encontrarás informacion sobre mis proyectos y los enlaces a los repositorios de cada uno de ellos.</p>
+            
+            <ListaProyectos />
         </PageSection>
+        
     )
 }

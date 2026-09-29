@@ -3,6 +3,7 @@ import "./globals.css";
 // Importaciones agregadas apartir de la creación del proyecto
 import Navbar from "@/components/NavBar";
 
+
 // Generado por Next.js >
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 
 //Metadata
 export const metadata = {
-  title:"Sergio Valdes - Portafolio",
-  description:"Ingeniero en Sistemas, desarrollador full-stack",
+  title: "Sergio Valdes - Portafolio",
+  description: "Ingeniero en Sistemas, desarrollador full-stack",
 }
 
 export default function RootLayout({ children }) {
@@ -25,8 +26,8 @@ export default function RootLayout({ children }) {
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
         {/*Agregamos nuestro Navbar*/}
-        <Navbar/>
-          {children}
+          <Navbar />
+        {children}
       </body>
     </html>
   );
